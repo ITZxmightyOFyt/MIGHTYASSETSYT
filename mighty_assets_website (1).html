@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090610">
+<title>MIGHTY ASSETS — Editing Resources by @ITZxMIGHTY</title>
+<style>
+:root{--bg:#090610;--panel:#130d1d;--panel2:#1b1128;--purple:#9b4dff;--purple2:#6d28d9;--text:#f5efff;--muted:#a99bb9;--line:#30213f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#32164c 0,transparent 42%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#0b0712eF;backdrop-filter:blur(16px);border-bottom:1px solid #291b38}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:900;letter-spacing:2px;font-size:21px}.brand span{color:#b879ff}.navlinks{display:flex;gap:22px;color:#c6b9d4;font-size:13px}.navlinks a:hover{color:#c58cff}
+.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:9px 12px;border-radius:10px}
+.hero{padding:90px 0 65px;text-align:center}.eyebrow{display:inline-block;border:1px solid #58317b;background:#1b1029;color:#d6b5ff;border-radius:99px;padding:8px 14px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(42px,8vw,82px);line-height:.98;margin:24px 0 18px;letter-spacing:-3px}.gradient{background:linear-gradient(90deg,#fff,#c58aff 48%,#8b45f5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:650px;margin:0 auto;color:var(--muted);line-height:1.75;font-size:15px}.byline{margin-top:18px;color:#c18bff;font-weight:700;font-size:13px;letter-spacing:1px}
+.searchbox{max-width:650px;margin:32px auto 0;display:flex;gap:10px;background:#140d1e;border:1px solid #4a3062;border-radius:15px;padding:8px;box-shadow:0 10px 50px #0008}
+.searchbox input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:white;padding:12px;font-size:14px}.searchbox button,.primary{border:0;border-radius:10px;background:linear-gradient(135deg,#a855f7,#6d28d9);color:white;font-weight:800;padding:12px 20px;cursor:pointer}
+.quick{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}.quick a{font-size:12px;color:#c8b8d8;border:1px solid var(--line);padding:8px 12px;border-radius:99px}.quick a:hover{border-color:#a855f7;color:white}
+section{padding:55px 0;scroll-margin-top:80px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.kicker{color:#b879ff;font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:30px;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0;max-width:400px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#191124,#100b17);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.2s;min-width:0}.card:hover{transform:translateY(-4px);border-color:#8050aa;box-shadow:0 12px 35px #0005}.thumb{height:155px;background:linear-gradient(135deg,#32144d,#151020 70%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.thumb:before,.thumb:after{content:"";position:absolute;width:170px;height:170px;border:1px solid #ffffff18;border-radius:35%;transform:rotate(35deg)}.thumb:after{width:115px;height:115px;border-color:#c084fc55}.thumb span{z-index:1;font-size:30px;font-weight:900;letter-spacing:3px;color:#e6ccff;text-shadow:0 0 24px #a855f7}.tag{position:absolute;left:13px;top:13px;z-index:2;background:#0a0711c9;border:1px solid #70419b;color:#d9b9ff;border-radius:99px;padding:5px 9px;font-size:10px}
+.cardbody{padding:17px}.cardbody h3{font-size:16px;margin:0 0 8px}.cardbody p{font-size:12px;line-height:1.6;color:var(--muted);margin:0 0 15px}.cardfoot{display:flex;justify-content:space-between;align-items:center;color:#bca9ce;font-size:11px}.cardfoot a{color:#c58aff;font-weight:800}.empty{display:none;color:var(--muted);padding:20px 0}
+.helpbox{display:grid;grid-template-columns:1.2fr .8fr;gap:25px;background:linear-gradient(120deg,#21102f,#100b18);border:1px solid #563276;border-radius:22px;padding:30px}.helpbox h2{font-size:30px;margin:8px 0}.helpbox p{color:var(--muted);font-size:13px;line-height:1.7}.help-list{display:grid;gap:10px;align-content:center}.help-list div{background:#0d0914;border:1px solid var(--line);padding:13px;border-radius:12px;font-size:12px;color:#d8c8e8}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#9d8eaa;font-size:12px}.footerrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footerrow strong{color:#c18bff}
+@media(max-width:760px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0712;padding:20px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:65px 0 45px}.grid{grid-template-columns:repeat(2,1fr)}.section-head{display:block}.section-head p{margin-top:10px}.helpbox{grid-template-columns:1fr}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.thumb{height:175px}.searchbox button{padding:11px 13px}.brand{font-size:18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home">MIGHTY <span>ASSETS</span></a>
+  <nav class="navlinks" id="navlinks"><a href="#overlays">Overlays</a><a href="#clips">Clips</a><a href="#tutorials">Tutorials</a><a href="#packs">4K Packs</a><a href="#help">Help</a></nav>
+  <button class="menu" onclick="document.getElementById('navlinks').classList.toggle('open')">MENU</button>
+</div></header>
+<main id="home">
+  <div class="hero wrap">
+    <span class="eyebrow">Your editing resource hub</span>
+    <h1>CREATE. EDIT. <span class="gradient">DOMINATE.</span></h1>
+    <p>A creative space for editors to discover overlays, video clips, tutorials, 4K scene packs and Twixtors. Built to make your editing workflow smoother and your ideas bigger.</p>
+    <div class="byline">AN EDITING WEBSITE BY @ITZxMIGHTY</div>
+    <div class="searchbox"><input id="search" type="search" placeholder="Search overlays, clips, tutorials..." aria-label="Search resources"><button onclick="filterCards()">SEARCH</button></div>
+    <div class="quick"><a href="#overlays">Overlays</a><a href="#clips">Clips</a><a href="#tutorials">Edit Tutorials</a><a href="#packs">4K Scene Packs</a><a href="#packs">Twixtors</a></div>
+  </div>
+
+  <section id="overlays"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / Visual effects</div><h2>Overlays</h2></div><p>Add atmosphere and detail to your edits with visual elements and effects.</p></div>
+    <div class="grid">
+      <article class="card" data-search="glow light leaks overlays effects"><div class="thumb"><i class="tag">OVERLAY</i><span>LIGHT FX</span></div><div class="cardbody"><h3>Glow & Light Effects</h3><p>Light leaks, glow elements and effects for your next edit.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="smoke dust particles overlay"><div class="thumb"><i class="tag">OVERLAY</i><span>PARTICLES</span></div><div class="cardbody"><h3>Smoke & Particles</h3><p>Atmospheric smoke, dust and particle resources.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="transitions shapes frames overlay"><div class="thumb"><i class="tag">OVERLAY</i><span>TRANSITIONS</span></div><div class="cardbody"><h3>Transitions & Frames</h3><p>Extra elements to polish your video transitions.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="clips"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / Footage library</div><h2>Clips</h2></div><p>Find footage for edits, montages, experiments and creative projects.</p></div>
+    <div class="grid">
+      <article class="card" data-search="movie cinematic clips footage"><div class="thumb"><i class="tag">CLIPS</i><span>CINEMATIC</span></div><div class="cardbody"><h3>Cinematic Clips</h3><p>Movie-style shots and cinematic footage collections.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="character edit clips scenes"><div class="thumb"><i class="tag">CLIPS</i><span>CHARACTERS</span></div><div class="cardbody"><h3>Character Clips</h3><p>Character-focused footage for fan edits and montages.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="gameplay gaming clips"><div class="thumb"><i class="tag">CLIPS</i><span>GAMEPLAY</span></div><div class="cardbody"><h3>Gaming Clips</h3><p>Gameplay footage and moments for gaming edits.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="tutorials"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / Learn & improve</div><h2>Edit Tutorials</h2></div><p>Learn techniques, discover workflows and keep improving your editing skills.</p></div>
+    <div class="grid">
+      <article class="card" data-search="capcut mobile editing tutorial"><div class="thumb"><i class="tag">TUTORIAL</i><span>MOBILE EDITING</span></div><div class="cardbody"><h3>Mobile Editing Guides</h3><p>Tips and walkthroughs for editing on your phone.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="alight motion effects tutorial"><div class="thumb"><i class="tag">TUTORIAL</i><span>VISUAL FX</span></div><div class="cardbody"><h3>Effects & Techniques</h3><p>Explore effects, timing, transitions and visual style.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="color grading quality tutorial"><div class="thumb"><i class="tag">TUTORIAL</i><span>COLOR GRADE</span></div><div class="cardbody"><h3>Color & Quality</h3><p>Learn about color grading, export settings and clarity.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="packs"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">04 / High quality resources</div><h2>4K Scene Packs & Twixtors</h2></div><p>Scene collections and slow-motion clips for detailed, high-impact edits.</p></div>
+    <div class="grid">
+      <article class="card" data-search="4k scene pack movie scenes"><div class="thumb"><i class="tag">4K PACK</i><span>SCENE PACK</span></div><div class="cardbody"><h3>4K Scene Packs</h3><p>Organized scene collections for your favorite edit themes.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="twixtor slow motion 4k clips"><div class="thumb"><i class="tag">TWIXTOR</i><span>SLOW MOTION</span></div><div class="cardbody"><h3>4K Twixtors</h3><p>Smooth slow-motion resources for velocity edits.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+      <article class="card" data-search="download packs resources collection"><div class="thumb"><i class="tag">COLLECTION</i><span>NEW DROPS</span></div><div class="cardbody"><h3>Latest Resource Drops</h3><p>Fresh additions and featured downloads in one place.</p><div class="cardfoot"><span>Coming soon</span><a href="#help">Details ↗</a></div></div></article>
+    </div>
+  </div></section>
+
+  <section id="help"><div class="wrap"><div class="helpbox">
+    <div><div class="kicker">05 / Need a hand?</div><h2>Editing starts here.</h2><p>MIGHTY ASSETS is a resource hub created by <strong>@ITZxMIGHTY</strong> for the editing community. Browse the categories, search for resources and check back as new assets and guides are added. Resource cards are placeholders until download links are added by the site owner.</p><a class="primary" href="https://www.youtube.com/@ITZxMIGHTY" target="_blank" rel="noopener">VISIT @ITZxMIGHTY</a></div>
+    <div class="help-list"><div>✦ Browse resources by category</div><div>✦ Use the search bar to find content</div><div>✦ Check back for new uploads</div><div>✦ For help, contact the creator through YouTube</div></div>
+  </div></div></section>
+</main>
+<footer><div class="wrap footerrow"><span>© 2026 <strong>MIGHTY ASSETS</strong></span><span>Created for editors · By <strong>@ITZxMIGHTY</strong></span></div></footer>
+<script>
+const searchInput=document.getElementById('search');
+function filterCards(){const q=searchInput.value.trim().toLowerCase();let shown=0;document.querySelectorAll('.card').forEach(card=>{const hay=(card.innerText+' '+card.dataset.search).toLowerCase();const match=!q||hay.includes(q);card.style.display=match?'':'none';if(match)shown++;});}
+searchInput.addEventListener('input',filterCards);
+searchInput.addEventListener('keydown',e=>{if(e.key==='Enter')filterCards();});
+</script>
+</body></html>
